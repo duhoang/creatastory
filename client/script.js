@@ -118,7 +118,7 @@ const generateIllustration = async(desc, elm) => {
 
     elm.getElementsByClassName('loading_gif')[0].style.display = "none";
     
-    elm.getElementsByClassName('img_container')[0].style.backgroundImage=`url(data:image/png;base64,${data.images.artifacts[0].base64})`;
+    elm.getElementsByClassName('img_container')[0].style.backgroundImage=`url(${data.image.data[0].url})`;
   }
 }
 
