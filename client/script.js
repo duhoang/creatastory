@@ -100,7 +100,7 @@ const generateIllustration = async(desc, elm) => {
 
   elm.getElementsByClassName('loading_gif')[0].style.display = "block";
   
-  const response = await fetch(`https://create-a-story.onrender.com/stablediff${image2image ? 'img2img' : ''}`, {
+  const response = await fetch(`https://create-a-story.onrender.com/images`, {
   //const response = await fetch(`http://localhost:4000/stablediff${image2image ? 'img2img' : ''}`, {
     method: 'POST',
     headers: {
